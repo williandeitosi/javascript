@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Migração</title>
+</head>
+<body>
+    <h1>Sistema de Migração</h1>
+    pais onde vive<input type="text" name="txtpa" id="txtpa">
+    <input type="button" value="verificar" onclick="caulcular()">
+    <div id="res">
+
+    </div>
+    <script>
+        function caulcular(){
+            var txtp = document.querySelector('input#txtpa')
+            var res = document.querySelector('div#res')
+            var país = String(txtp.value)
+            res.innerHTML = `${país}`
+            if (país != eua) {
+               res.innerHTML +=  `<P>Você é Brasileiro</P>`
+            } else{
+               res.innerHTML += `<P>Você é <strong>ESTRANGEIRO</strong></P>`
+            }//Não consegui fazer rodar
+        }
+    </script>
+    
+</body>
+</html>
